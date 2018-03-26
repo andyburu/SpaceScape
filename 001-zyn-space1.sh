@@ -1,3 +1,4 @@
 #!/bin/sh
 . ./setup.source
-zynaddsubfx -U -P 2001 -l ${CONF}/Plingplong.xmz >> ${BIG_LOG} 2>&1
+me=`basename $0`
+zynaddsubfx -U -P 2001 -l ${CONF}/Space1.xmz >> ${LOG_DIR}/$me.log 2>&1

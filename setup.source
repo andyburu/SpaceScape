@@ -1,5 +1,5 @@
 #!/bin/sh
-
+BIOMIDI_HOME=/home/andreas/BioMIDI/BioMIDI
 PROJ_HOME=/home/andreas/BioMIDI/SpaceScape
-BIG_LOG=${PROJ_HOME}/log/big.log
+LOG_DIR=${PROJ_HOME}/log
 CONF=${PROJ_HOME}/config
