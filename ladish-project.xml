@@ -2,8 +2,8 @@
 <!--
 ladish Project.
 -->
-<!-- Mon Mar 26 15:32:26 2018 -->
-<project name="Space" uuid="6530225f-f231-458d-ac70-c84914346175">
+<!-- Mon Mar 26 17:02:11 2018 -->
+<project name="Space" uuid="b0c75e98-613b-4a41-9d2b-22f59540f875">
   <room>
     <port name="Left" uuid="871954a7-7c0f-4092-ae34-465e1f1bb0ca" type="audio" direction="capture" />
     <port name="Right" uuid="2dc1da00-cebd-47ea-a239-c30db9653e7c" type="audio" direction="capture" />
@@ -42,6 +42,11 @@ ladish Project.
           <port name="Output" uuid="dd9687b2-0812-4111-a8ae-2724c2798723" />
         </ports>
       </client>
+      <client name="Scalezor" uuid="5da5e13d-e4b3-4da2-8a8a-8d2849d99cb2">
+        <ports>
+          <port name="Output" uuid="946dd596-befb-4cba-b656-f992b304dfae" />
+        </ports>
+      </client>
     </clients>
   </jack>
   <clients>
@@ -52,8 +57,8 @@ ladish Project.
         <port name="MIDI" uuid="abc90af1-dcc4-41b3-b3eb-d4f5a9c4f708" type="midi" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1348.0</key>
-        <key name="http://ladish.org/ns/canvas/y">1241.0</key>
+        <key name="http://ladish.org/ns/canvas/x">939.0</key>
+        <key name="http://ladish.org/ns/canvas/y">1264.0</key>
       </dict>
     </client>
     <client name="Playback" uuid="e53018fe-4ae5-4d4c-b4a1-3b8f12e1ae91" naming="app">
@@ -93,18 +98,31 @@ ladish Project.
         <key name="http://ladish.org/ns/canvas/y">1376.0</key>
       </dict>
     </client>
-    <client name="Bio Heartdetect" uuid="e6629286-f196-4f19-a1ec-976200d2d442" naming="app" app="b4e43d08-437a-4b35-8244-4dbdae5f6cc5">
+    <client name="Bio Heart Detect" uuid="e6629286-f196-4f19-a1ec-976200d2d442" naming="app" app="b4e43d08-437a-4b35-8244-4dbdae5f6cc5">
       <ports>
         <port name="Output" uuid="386ecba2-6f76-40ea-ba25-47985f908285" type="midi" direction="output" />
       </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1128.0</key>
+        <key name="http://ladish.org/ns/canvas/y">1230.0</key>
+      </dict>
     </client>
-    <client name="Bio Motiondetect" uuid="56e621d8-2ecc-47d0-8f4a-4baa54a23909" naming="app" app="afafa304-70d0-4318-a551-35c34682c074">
+    <client name="Bio Motion Detect" uuid="56e621d8-2ecc-47d0-8f4a-4baa54a23909" naming="app" app="afafa304-70d0-4318-a551-35c34682c074">
       <ports>
         <port name="Output" uuid="dd9687b2-0812-4111-a8ae-2724c2798723" type="midi" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1320.0</key>
-        <key name="http://ladish.org/ns/canvas/y">1351.0</key>
+        <key name="http://ladish.org/ns/canvas/x">1116.0</key>
+        <key name="http://ladish.org/ns/canvas/y">1385.0</key>
+      </dict>
+    </client>
+    <client name="Scalezor" uuid="8439124f-880f-4210-b64c-43d9ac45caeb" naming="app" app="72764112-6286-40f7-8973-be952d219170">
+      <ports>
+        <port name="Output" uuid="946dd596-befb-4cba-b656-f992b304dfae" type="midi" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1386.0</key>
+        <key name="http://ladish.org/ns/canvas/y">1329.0</key>
       </dict>
     </client>
   </clients>
@@ -113,13 +131,15 @@ ladish Project.
     <connection port1="376ce891-cc72-4486-88c0-c05c3d0897c3" port2="b371a9a1-18cb-4932-813c-daf278cf2b20" />
     <connection port1="8172493f-f213-4d24-92a1-c6b67dde9885" port2="2776ef6f-39e1-4c5e-8920-3deeb409c3f5" />
     <connection port1="450257ed-2932-4e7b-9b0c-f5790160a2f5" port2="b371a9a1-18cb-4932-813c-daf278cf2b20" />
-    <connection port1="dd9687b2-0812-4111-a8ae-2724c2798723" port2="b6817823-0eb1-4ab7-a4a5-ece294e1932d" />
-    <connection port1="dd9687b2-0812-4111-a8ae-2724c2798723" port2="f819f6eb-652b-4dfd-aa3b-4a7b1620fe52" />
+    <connection port1="946dd596-befb-4cba-b656-f992b304dfae" port2="b6817823-0eb1-4ab7-a4a5-ece294e1932d" />
+    <connection port1="946dd596-befb-4cba-b656-f992b304dfae" port2="f819f6eb-652b-4dfd-aa3b-4a7b1620fe52" />
   </connections>
   <applications>
     <application name="Zyn Space 1" uuid="241ca1ec-1b50-4dd0-a947-e84456ee5dd4" terminal="false" level="0" autorun="true">%2Fhome%2Fandreas%2FBioMIDI%2FSpaceScape%2F001-zyn-space1.sh</application>
     <application name="Zyn Piano 1" uuid="f4c9f323-ef0a-46ca-aebd-1569576c320e" terminal="false" level="0" autorun="true">%2Fhome%2Fandreas%2FBioMIDI%2FSpaceScape%2F002-zyn-piano1.sh</application>
     <application name="Bio Heartdetect" uuid="b4e43d08-437a-4b35-8244-4dbdae5f6cc5" terminal="false" level="0" autorun="true">%2Fhome%2Fandreas%2FBioMIDI%2FSpaceScape%2F003-bio-heartdetect.sh</application>
     <application name="Bio Motiondetect" uuid="afafa304-70d0-4318-a551-35c34682c074" terminal="false" level="0" autorun="true">%2Fhome%2Fandreas%2FBioMIDI%2FSpaceScape%2F004-bio-motiondetect.sh</application>
+    <application name="Scalezor" uuid="72764112-6286-40f7-8973-be952d219170" terminal="false" level="0" autorun="true">%2Fhome%2Fandreas%2FBioMIDI%2FSpaceScape%2F005-scalezor.sh 
+</application>
   </applications>
 </project>
